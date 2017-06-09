@@ -22,67 +22,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="131-NJ-bNx">
-                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="447"/>
                                 <color key="backgroundColor" red="0.06334961687" green="0.76818954900000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="D6f-YE-ezp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="快到碗里来" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8E7-Wb-E6O">
-                                <rect key="frame" x="0.0" y="220" width="375" height="407"/>
-                                <color key="backgroundColor" red="0.33730049379999999" green="0.81673431340000002" blue="0.87731995559999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEm-m2-nkZ">
-                                <rect key="frame" x="0.0" y="627" width="187.5" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <color key="backgroundColor" red="0.52359612944162437" green="0.52359612944162437" blue="0.52359612944162437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="5qF-O1-YEf"/>
+                                    <constraint firstAttribute="height" constant="200" id="5qF-O1-YEf"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="生成属性代码">
-                                    <color key="titleColor" red="1" green="0.3477907616" blue="0.54046769719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="createProperty" destination="EgH-Rd-4Q0" eventType="touchUpInside" id="lCT-Z7-sDO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jyw-eK-4mY">
-                                <rect key="frame" x="187.5" y="627" width="187.5" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Q2D-nT-TSK"/>
-                                </constraints>
-                                <state key="normal" title="拷贝到剪切板">
-                                    <color key="titleColor" red="1" green="0.3477907616" blue="0.54046769719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="copyString" destination="EgH-Rd-4Q0" eventType="touchUpInside" id="zS2-u0-tHd"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Jyw-eK-4mY" firstAttribute="top" secondItem="8E7-Wb-E6O" secondAttribute="bottom" id="08p-Bm-lcg"/>
-                            <constraint firstAttribute="trailing" secondItem="Jyw-eK-4mY" secondAttribute="trailing" id="2kD-XS-bSI"/>
-                            <constraint firstItem="Os3-DY-1wQ" firstAttribute="top" secondItem="Jyw-eK-4mY" secondAttribute="bottom" id="6Gd-Ov-Wex"/>
-                            <constraint firstItem="8E7-Wb-E6O" firstAttribute="top" secondItem="131-NJ-bNx" secondAttribute="bottom" id="8no-fx-YKb"/>
                             <constraint firstItem="131-NJ-bNx" firstAttribute="leading" secondItem="1qZ-HT-vEg" secondAttribute="leading" id="Ct5-8T-6bg"/>
-                            <constraint firstItem="8E7-Wb-E6O" firstAttribute="leading" secondItem="1qZ-HT-vEg" secondAttribute="leading" id="Hnr-Gg-brt"/>
-                            <constraint firstItem="Jyw-eK-4mY" firstAttribute="leading" secondItem="hEm-m2-nkZ" secondAttribute="trailing" id="JmA-tM-eD0"/>
                             <constraint firstItem="131-NJ-bNx" firstAttribute="top" secondItem="M4z-jL-qwm" secondAttribute="bottom" id="MQo-G8-u5a"/>
-                            <constraint firstItem="Jyw-eK-4mY" firstAttribute="width" secondItem="hEm-m2-nkZ" secondAttribute="width" id="PQP-Ws-SSn"/>
+                            <constraint firstAttribute="trailing" secondItem="hEm-m2-nkZ" secondAttribute="trailing" id="O9J-jf-vbe"/>
                             <constraint firstItem="Os3-DY-1wQ" firstAttribute="top" secondItem="hEm-m2-nkZ" secondAttribute="bottom" id="f93-Xy-jTY"/>
-                            <constraint firstAttribute="trailing" secondItem="8E7-Wb-E6O" secondAttribute="trailing" id="iJN-CK-2zx"/>
                             <constraint firstAttribute="trailing" secondItem="131-NJ-bNx" secondAttribute="trailing" id="ktp-g4-wpB"/>
+                            <constraint firstItem="hEm-m2-nkZ" firstAttribute="top" secondItem="131-NJ-bNx" secondAttribute="bottom" id="n2W-IG-hth"/>
                             <constraint firstItem="hEm-m2-nkZ" firstAttribute="leading" secondItem="1qZ-HT-vEg" secondAttribute="leading" id="nNF-FW-J0m"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="dicStringTextField" destination="131-NJ-bNx" id="f3n-3x-C2z"/>
-                        <outlet property="propertyTextField" destination="8E7-Wb-E6O" id="9sJ-AI-vYb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPb-Vf-JZd" sceneMemberID="firstResponder"/>

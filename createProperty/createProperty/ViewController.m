@@ -13,8 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *dicStringTextField;
 
-@property (weak, nonatomic) IBOutlet UITextView *propertyTextField;
-
 
 
 @end
@@ -34,18 +32,19 @@
     
     // 文件全路径
     NSDictionary *dict = [self dictionaryWithJsonString:self.dicStringTextField.text];
+//    /Users/tuoshi/Desktop/property.txt
+    
+    NSString *path = @"/Users/tuoshi/Desktop/property.txt";
     
     // 设计模型,创建属性代码 => dict
-    self.propertyTextField.text = [dict createPropertyCode];
+    NSString *propertyCode =  [dict createPropertyCode];
+    NSLog(@"%@",propertyCode);
+    
+    [propertyCode writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:nil];
     
 }
 
-- (IBAction)copyString {
-    
-    UIPasteboard*pasteboard = [UIPasteboard generalPasteboard];
-    
-    pasteboard.string=self.propertyTextField.text;
-}
+
 
 - (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
     
